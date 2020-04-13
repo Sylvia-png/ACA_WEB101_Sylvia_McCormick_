@@ -4,16 +4,19 @@
     <title>Ryan Holiday</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="resume-style.css">
+    <script src="resume-interactive.js"></script>
 </head>
 <body>
     <div class="container">
         <section>
             <div>
-                <div><img src="https://www.eaglestalent.com/wp-content/uploads/2019/07/ryan-holiday.jpg"alt="Ryan Holiday"class="avatar">Author</div>
+                <div class="containerI" onclick="animatePhoto(this)">
+                <img class="image"src="https://www.eaglestalent.com/wp-content/uploads/2019/07/ryan-holiday.jpg"alt="Ryan Holiday"class="avatar">Author</div>
             </div>
             <div>
-            <div class="my-name">Ryan Holiday</div><br>
+            <div class="my-name" onclick="animateName(this)">Ryan Holiday</div><br>
                 <p>Is an American autor, marketer, entrepreneur and founder of the creative advisor firm Brass Check. 
                     <br> He is media strategist,the former director of marketing of America apparel and a media columnist 
                     and editor-at-large for the New York observer.</p> 
@@ -23,7 +26,8 @@
             <div class="section-title">
                 <h2>Contact Info</h2><br>
                 <img src="./call.svg" alt="icon">
-                <p>125-683-9824</p><br>
+                <p id="phone" href="tel:###-###-####" onclick="animateNumber(this)">###-###-####</p><br>
+
                 <img src="room.svg"alt="icon">
                 <p>165 Anywhere Street</p>
                 <p>Austin TX</p><br>
